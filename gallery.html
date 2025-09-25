@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio - Gallery</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; margin: 0; }
+    header { background: #333; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px; }
+    .gallery img { width: 200px; height: 150px; object-fit: cover; border: 2px solid #333; }
+  </style>
+</head>
+<body>
+    <div id="gallery-page" class="page" style="display: none;">
+        <h2>Project Gallery</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 1.1em;">A showcase of my work across technology, development, and creative projects</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+            
+            <!-- Image placeholders with descriptions -->
+            <div style="background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="height: 200px; background: linear-gradient(45deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; font-weight: bold;">WP</div>
+                <div style="padding: 20px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">WordPress Development</h4>
+                    <p style="color: #666; line-height: 1.6;">Custom WordPress themes and plugins with advanced functionality, custom post types, and optimized performance.</p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="height: 200px; background: linear-gradient(45deg, #ff6b6b, #ee5a24); display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; font-weight: bold;">SV</div>
+                <div style="padding: 20px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">SvelteKit Applications</h4>
+                    <p style="color: #666; line-height: 1.6;">Modern reactive web applications built with SvelteKit, featuring smooth animations and optimal performance.</p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="height: 200px; background: linear-gradient(45deg, #2ecc71, #27ae60); display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; font-weight: bold;">🎬</div>
+                <div style="padding: 20px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">Video Production</h4>
+                    <p style="color: #666; line-height: 1.6;">Professional video editing in Premiere Pro with advanced techniques, color grading, and motion graphics.</p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="height: 200px; background: linear-gradient(45deg, #9b59b6, #8e44ad); display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; font-weight: bold;">🐍</div>
+                <div style="padding: 20px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">Python Projects</h4>
+                    <p style="color: #666; line-height: 1.6;">Network programming, automation scripts, and data downloaders built with Python for efficiency and scalability.</p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="height: 200px; background: linear-gradient(45df, #3498db, #2980b9); display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; font-weight: bold;">⚡</div>
+                <div style="padding: 20px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">System Optimization</h4>
+                    <p style="color: #666; line-height: 1.6;">Windows system optimization, performance tuning, and hardware configuration for maximum efficiency.</p>
+                </div>
+            </div>
+
+            <div style="background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                <div style="height: 200px; background: linear-gradient(45deg, #e74c3c, #c0392b); display: flex; align-items: center; justify-content: center; color: white; font-size: 3em; font-weight: bold;">🚀</div>
+                <div style="padding: 20px;">
+                    <h4 style="color: #333; margin-bottom: 10px;">Startup Concepts</h4>
+                    <p style="color: #666; line-height: 1.6;">Innovative startup ideas and prototypes designed to solve real-world problems and impact millions of lives.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 25px; background: rgba(102, 126, 234, 0.1); border-radius: 15px;">
+            <h3 style="color: #667eea; margin-bottom: 15px;">More Projects Coming Soon</h3>
+            <p style="color: #666;">I'm constantly working on new projects that push the boundaries of technology and innovation. Stay tuned for updates!</p>
+        </div>
+    </div> 
+
+    <script>
+        // Navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+            
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageId + '-page').style.display = 'block';
+            
+            // Add active class to clicked nav link
+            event.target.classList.add('active');
+        }
+
+        // Add some interactive functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to stat cards
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.05)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Form submission handler
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thanks for reaching out! This is a demo portfolio, but I appreciate your interest in connecting.');
+                });
+            }
+        });
+
+        // Add smooth scrolling effect
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add typing effect to the tagline
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', function() {
+            const tagline = document.querySelector('.tagline');
+            if (tagline) {
+                const originalText = tagline.textContent;
+                setTimeout(() => {
+                    typeWriter(tagline, originalText, 50);
+                }, 1000);
+            }
+        });
+    </script>
+
+</body>
+</html>
