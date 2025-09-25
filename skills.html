@@ -1,169 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio - Skills</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; }
-    header { background: #333; color: white; padding: 15px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    section { padding: 20px; }
-    table { width: 60%; margin: auto; border-collapse: collapse; }
-    table, th, td { border: 1px solid #333; }
-    th, td { padding: 10px; text-align: center; }
-    th { background: #555; color: white; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Hassaan Noor</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>My Skills</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="skills.html">Skills</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <div id="skills-page" class="page" style="display: none;">
-    <h2>Technical Skills & Expertise</h2>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 30px;">
-        
-        <!-- Development Skills -->
-        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 30px; border-radius: 20px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5em;">💻 Development</h3>
-            <ul style="list-style: none; space-y: 10px;">
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>WordPress Development:</strong> Custom themes, shortcodes, customizer, advanced menus</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Svelte/SvelteKit:</strong> Modern reactive frameworks, component architecture</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Python:</strong> Network programming, downloaders, automation scripts</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>C++:</strong> System-level programming, performance optimization</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>HTML/CSS/JavaScript:</strong> Modern web standards, responsive design</li>
+    <div class="container">
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <!-- Creative Skills -->
-        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 30px; border-radius: 20px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5em;">🎬 Creative & Media</h3>
-            <ul style="list-style: none;">
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Video Editing:</strong> Adobe Premiere Pro optimization and advanced techniques</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Content Creation:</strong> Direct, assertive writing for diverse audiences</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>YouTube Scripts:</strong> Emotional and engaging content, veteran-focused</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>PC Hardware:</strong> System building, performance optimization</li>
-            </ul>
-        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Technical Skills & Expertise</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 1.1em;">
+                Comprehensive technical skills spanning development, creative media, and entrepreneurship
+            </p>
 
-        <!-- Business & Strategy -->
-        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 30px; border-radius: 20px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5em;">🚀 Entrepreneurship</h3>
-            <ul style="list-style: none;">
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Startup Strategy:</strong> Scaling solutions for millions of users</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Risk Assessment:</strong> Calculated risk-taking for maximum impact</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Innovation:</strong> Identifying unconventional technological opportunities</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Problem Solving:</strong> Creative solutions for complex challenges</li>
-            </ul>
-        </div>
-
-        <!-- Languages -->
-        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 30px; border-radius: 20px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5em;">🗣️ Languages</h3>
-            <ul style="list-style: none;">
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>English:</strong> Fluent (Professional)</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Urdu:</strong> Native</li>
-                <li style="margin-bottom: 12px; padding: 10px; background: rgba(255, 255, 255, 0.5); border-radius: 8px;"><strong>Punjabi:</strong> Native</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div style="text-align: center; margin-top: 40px; padding: 25px; background: rgba(102, 126, 234, 0.1); border-radius: 15px;">
-        <h3 style="color: #667eea; margin-bottom: 15px;">Core Philosophy</h3>
-        <p style="font-size: 1.1em; font-style: italic;">"Every skill I develop is a tool to build technology that impacts millions of lives. I believe in the power of ambitious thinking combined with relentless execution."</p>
-    </div>
-</div>
-
-<script>
-    // Navigation functionality
-    function showPage(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.style.display = 'none');
-        
-        // Remove active class from all nav links
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => link.classList.remove('active'));
-        
-        // Show selected page
-        document.getElementById(pageId + '-page').style.display = 'block';
-        
-        // Add active class to clicked nav link
-        event.target.classList.add('active');
-    }
-
-    // Add some interactive functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        // Add hover effects to stat cards
-        const statCards = document.querySelectorAll('.stat-card');
-        statCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.05)';
-                this.style.transition = 'all 0.3s ease';
-            });
+            <!-- Skills Categories -->
             
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
+            <!-- Development Skills -->
+            <div class="skill-category">
+                <div style="float: left; width: 70%;">
+                    <h3>💻 Development & Programming</h3>
+                    <ul class="skill-list">
+                        <li><strong>WordPress Development:</strong> Custom themes, shortcodes, customizer, advanced menus, and plugin development</li>
+                        <li><strong>Svelte/SvelteKit:</strong> Modern reactive frameworks, component architecture, and progressive web apps</li>
+                        <li><strong>Python:</strong> Network programming, automation scripts, data downloaders, and backend development</li>
+                        <li><strong>C++:</strong> System-level programming, performance optimization, and algorithm implementation</li>
+                        <li><strong>HTML/CSS/JavaScript:</strong> Modern web standards, responsive design, and interactive user interfaces</li>
+                    </ul>
+                </div>
+                <div style="float: right; width: 25%; text-align: center; padding-top: 20px;">
+                    <img src="images/svelte.png" alt="Development" style="width: 100%; max-width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                </div>
+                <div class="clear"></div>
+            </div>
 
-        // Form submission handler
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thanks for reaching out! This is a demo portfolio, but I appreciate your interest in connecting.');
-            });
-        }
-    });
+            <!-- Creative & Media Skills -->
+            <div class="skill-category">
+                <div style="float: right; width: 70%;">
+                    <h3>🎬 Creative & Media Production</h3>
+                    <ul class="skill-list">
+                        <li><strong>Video Editing:</strong> Adobe Premiere Pro optimization, advanced techniques, and workflow enhancement</li>
+                        <li><strong>Content Creation:</strong> Direct, assertive writing styles for diverse audiences and platforms</li>
+                        <li><strong>YouTube Scripts:</strong> Emotional and engaging content creation, veteran-focused messaging</li>
+                        <li><strong>PC Hardware:</strong> System building, performance optimization, and component selection</li>
+                        <li><strong>Performance Tuning:</strong> Optimizing systems for video production and development workflows</li>
+                    </ul>
+                </div>
+                <div style="float: left; width: 25%; text-align: center; padding-top: 20px;">
+                    <img src="images/video-placeholder.png" alt="Video Production" style="width: 100%; max-width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                </div>
+                <div class="clear"></div>
+            </div>
 
-    // Add smooth scrolling effect
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+            <!-- Entrepreneurship Skills -->
+            <div class="skill-category">
+                <div style="float: left; width: 70%;">
+                    <h3>🚀 Entrepreneurship & Strategy</h3>
+                    <ul class="skill-list">
+                        <li><strong>Startup Strategy:</strong> Scaling solutions for millions of users, market analysis, and growth planning</li>
+                        <li><strong>Risk Assessment:</strong> Calculated risk-taking for maximum impact and strategic decision making</li>
+                        <li><strong>Innovation Management:</strong> Identifying unconventional technological opportunities and market gaps</li>
+                        <li><strong>Problem Solving:</strong> Creative solutions for complex challenges using cross-domain knowledge</li>
+                        <li><strong>Project Management:</strong> Coordinating multiple projects and optimizing resource allocation</li>
+                    </ul>
+                </div>
+                <div style="float: right; width: 25%; text-align: center; padding-top: 20px;">
+                    <img src="images/startup-placeholder.jpg" alt="Entrepreneurship" style="width: 100%; max-width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                </div>
+                <div class="clear"></div>
+            </div>
 
-    // Add typing effect to the tagline
-    function typeWriter(element, text, speed = 100) {
-        let i = 0;
-        element.innerHTML = '';
-        
-        function type() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-        type();
-    }
+            <!-- Languages & Communication -->
+            <div class="skill-category">
+                <div style="float: right; width: 70%;">
+                    <h3>🗣️ Languages & Communication</h3>
+                    <ul class="skill-list">
+                        <li><strong>English:</strong> Fluent (Professional) - Technical writing, presentations, and international collaboration</li>
+                        <li><strong>Urdu:</strong> Native - Content creation and local market understanding</li>
+                        <li><strong>Punjabi:</strong> Native - Regional communication and cultural insights</li>
+                        <li><strong>Technical Communication:</strong> Documentation, API guides, and developer resources</li>
+                        <li><strong>Content Strategy:</strong> Multi-platform content planning and audience engagement</li>
+                    </ul>
+                </div>
+                <div style="float: left; width: 25%; text-align: center; padding-top: 20px;">
+                    <img src="images/communication-placeholder.jpg" alt="Communication" style="width: 100%; max-width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                </div>
+                <div class="clear"></div>
+            </div>
 
-    // Initialize typing effect when page loads
-    window.addEventListener('load', function() {
-        const tagline = document.querySelector('.tagline');
-        if (tagline) {
-            const originalText = tagline.textContent;
-            setTimeout(() => {
-                typeWriter(tagline, originalText, 50);
-            }, 1000);
-        }
-    });
-</script>
-
+            <!-- Core Philosophy -->
+            <div class="cta-section" style="margin-top: 40px;">
+                <h3>Core Philosophy & Approach</h3>
+                <div style="text-align: left; margin-top: 25px;">
+                    <div style="float: left; width: 48%; padding-right: 20px;">
+                        <p><strong>Ambitious Vision:</strong> Every skill I develop is a tool to build technology that impacts millions of lives. I believe in thinking big and executing strategically.</p>
+                        <p><strong>Continuous Learning:</strong> Technology evolves rapidly, so I maintain a growth mindset and constantly update my skills to stay ahead of industry trends.</p>
+                    </div>
+                    <div style="float: right; width: 48%; padding-left: 20px;">
+                        <p><strong>Cross-Domain Integration:</strong> My diverse skill set allows me to approach problems from multiple angles and create innovative solutions that others might miss.</p>
+                        <p><strong>Results-Driven:</strong> I focus on measurable outcomes and scalable solutions that can grow from prototypes to million-user platforms.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <a href="gallery.html" class="cta-button" style="margin-top: 30px;">View My Project Gallery</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

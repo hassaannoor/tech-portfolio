@@ -1,148 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio - Hobbies</title>
-  <!-- <style>
-    body { font-family: Arial, sans-serif; background: #fff; margin: 0; }
-    header { background: #333; color: white; padding: 15px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    section { padding: 20px; }
-    ul { line-height: 1.8; }
-  </style> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Hassaan Noor</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>My Hobbies</h1>
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="javascript:showPage('hobbies')">Hobbies</a></li>
-            <li><a href="javascript:showPage('skills')">Skills</a></li>
-            <li><a href="javascript:showPage('gallery')">Gallery</a></li>
-            <li><a href="javascript:showPage('contact')">Contact</a></li>
-        </ul>
-    </nav>
-  </header>
-  <div id="hobbies-page" class="page" style="display: none;">
-    <h2>My Hobbies & Interests</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
-        
-        <div style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 15px; font-size: 1.4em;">🚁 Advanced Technology</h3>
-            <p>I'm fascinated by cutting-edge tech, especially unconventional aspects like experimental aircraft systems, advanced weapons technology, and innovative cooling methods. I love exploring how these technologies push the boundaries of what's possible.</p>
-        </div>
+    <div class="container">
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html" class="active">Hobbies</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-        <div style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 15px; font-size: 1.4em;">🎵 Music Theory</h3>
-            <p>Music theory captivates me with its mathematical precision and creative possibilities. I enjoy analyzing chord progressions, understanding harmonic relationships, and exploring how different musical systems create emotional responses.</p>
-        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>My Hobbies & Interests</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 1.1em;">
+                Exploring diverse fields that fuel my innovation and entrepreneurial mindset
+            </p>
 
-        <div style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 15px; font-size: 1.4em;">🏛️ Geopolitical History</h3>
-            <p>I'm deeply interested in the rise and fall of empires, studying patterns of geopolitical dominance throughout history. Understanding these patterns helps me analyze current global dynamics and predict future trends.</p>
-        </div>
+            <!-- Hobbies Grid -->
+            <div class="card-grid">
+                
+                <div class="card">
+                    <h4>🚁 Advanced Technology</h4>
+                    <p>I'm fascinated by cutting-edge tech, especially unconventional aspects like experimental aircraft systems, advanced weapons technology, and innovative cooling methods. I love exploring how these technologies push the boundaries of what's possible and can be applied to solve real-world problems at scale.</p>
+                </div>
 
-        <div style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 15px; font-size: 1.4em;">🕵️ Urban Legends Research</h3>
-            <p>I have a preference for non-supernatural urban legends - those grounded in reality but shrouded in mystery. I enjoy investigating the factual basis behind these stories and understanding how they evolve in our collective consciousness.</p>
-        </div>
+                <div class="card">
+                    <h4>🎵 Music Theory</h4>
+                    <p>Music theory captivates me with its mathematical precision and creative possibilities. I enjoy analyzing chord progressions, understanding harmonic relationships, and exploring how different musical systems create emotional responses. This systematic approach to creativity influences my approach to technology design.</p>
+                </div>
 
-        <div style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 15px; font-size: 1.4em;">⚡ System Optimization</h3>
-            <p>I'm passionate about optimizing Windows systems, fine-tuning performance, and exploring advanced system configurations. Whether it's for video editing workflows or development environments, I love maximizing efficiency.</p>
-        </div>
+                <div class="card">
+                    <h4>🏛️ Geopolitical History</h4>
+                    <p>I'm deeply interested in the rise and fall of empires, studying patterns of geopolitical dominance throughout history. Understanding these patterns helps me analyze current global dynamics, predict future trends, and apply strategic thinking to business and technology development.</p>
+                </div>
 
-        <div style="background: rgba(102, 126, 234, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(102, 126, 234, 0.2);">
-            <h3 style="color: #667eea; margin-bottom: 15px; font-size: 1.4em;">🧠 Productivity Hacking</h3>
-            <p>I'm always exploring study and work hacks to maximize productivity and overcome challenges. From optimizing workflows to finding creative solutions for everyday problems, I believe in continuous self-improvement.</p>
-        </div>
+                <div class="card">
+                    <h4>🕵️ Urban Legends Research</h4>
+                    <p>I have a preference for non-supernatural urban legends - those grounded in reality but shrouded in mystery. I enjoy investigating the factual basis behind these stories and understanding how they evolve in our collective consciousness. This research enhances my storytelling abilities for content creation.</p>
+                </div>
 
+                <div class="card">
+                    <h4>⚡ System Optimization</h4>
+                    <p>I'm passionate about optimizing Windows systems, fine-tuning performance, and exploring advanced system configurations. Whether it's for video editing workflows or development environments, I love maximizing efficiency and pushing hardware to its limits through careful optimization.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🧠 Productivity Hacking</h4>
+                    <p>I'm always exploring study and work hacks to maximize productivity and overcome challenges. From optimizing workflows to finding creative solutions for everyday problems, I believe in continuous self-improvement and applying systematic approaches to personal development.</p>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+
+            <!-- How Hobbies Influence Work -->
+            <div class="cta-section" style="margin-top: 50px;">
+                <h3>How My Interests Drive Innovation</h3>
+                <div style="text-align: left; margin-top: 20px;">
+                    <div style="float: left; width: 48%; padding-right: 20px;">
+                        <p><strong>Cross-Domain Learning:</strong> My diverse interests allow me to draw connections between seemingly unrelated fields, leading to innovative solutions in technology and business.</p>
+                        <p><strong>Strategic Thinking:</strong> Studying geopolitical patterns and system optimization gives me a strategic mindset essential for building scalable startups.</p>
+                    </div>
+                    <div style="float: right; width: 48%; padding-left: 20px;">
+                        <p><strong>Creative Problem-Solving:</strong> Music theory and urban legends research enhance my creative thinking and storytelling abilities for content creation and user experience design.</p>
+                        <p><strong>Technical Excellence:</strong> My passion for advanced technology and system optimization drives me to push the boundaries of what's technically possible.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <a href="skills.html" class="cta-button" style="margin-top: 30px;">Explore My Technical Skills</a>
+            </div>
+        </div>
     </div>
-</div>
-  
-<script>
-    // Navigation functionality
-    function showPage(pageId) {
-        // Hide all pages
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.style.display = 'none');
-        
-        // Remove active class from all nav links
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => link.classList.remove('active'));
-        
-        // Show selected page
-        document.getElementById(pageId + '-page').style.display = 'block';
-        
-        // Add active class to clicked nav link
-        event.target.classList.add('active');
-    }
-
-    // Add some interactive functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        // Add hover effects to stat cards
-        const statCards = document.querySelectorAll('.stat-card');
-        statCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.05)';
-                this.style.transition = 'all 0.3s ease';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Form submission handler
-        const form = document.querySelector('form');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thanks for reaching out! This is a demo portfolio, but I appreciate your interest in connecting.');
-            });
-        }
-    });
-
-    // Add smooth scrolling effect
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Add typing effect to the tagline
-    function typeWriter(element, text, speed = 100) {
-        let i = 0;
-        element.innerHTML = '';
-        
-        function type() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-        type();
-    }
-
-    // Initialize typing effect when page loads
-    window.addEventListener('load', function() {
-        const tagline = document.querySelector('.tagline');
-        if (tagline) {
-            const originalText = tagline.textContent;
-            setTimeout(() => {
-                typeWriter(tagline, originalText, 50);
-            }, 1000);
-        }
-    });
-</script>
-
 </body>
 </html>
